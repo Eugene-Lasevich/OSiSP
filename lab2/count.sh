@@ -34,7 +34,7 @@ while IFS= read -r line || [[ -n $line ]]; do
         counts+=($((count)))
         prices+=($((price * count)))
     fi
-done <inpt.txt
+done <input.txt
 
 IFS=',' read -r name count price <<<"$input_string"
 
